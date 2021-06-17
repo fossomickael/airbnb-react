@@ -3,7 +3,7 @@ import Flat from './flat';
 const FlatList = (props) => {
     return (
       <div className="flat-list">
-        {props.flats.map(flat => <Flat flat={flat} key={flat.name} />)}
+        {props.flats.map(flat => <Flat flat={flat} key={flat.name} updateMapFunction={props.updateMapFunction} />)}
       </div>
     );
   };
