@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App api_key={API_KEY} />
   </React.StrictMode>,
   document.getElementById('root')
 );

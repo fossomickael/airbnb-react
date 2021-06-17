@@ -35,7 +35,7 @@ class App extends Component {
       </div>
          
       <div>
-        <Map long={this.state.long} lat={this.state.lat} />
+        <Map long={this.state.long} lat={this.state.lat} api_key={this.props.api_key} />
       </div>
          
       </div>
